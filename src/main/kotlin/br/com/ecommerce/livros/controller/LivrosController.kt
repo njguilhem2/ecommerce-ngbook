@@ -15,7 +15,7 @@ class LivrosController {
     @Autowired
     lateinit var livrosService: LivrosService
 
-    @GetMapping()
+    @GetMapping ()
     fun getLivros(): ResponseEntity<LivrosResponse?>{
         return ResponseEntity(this.livrosService.listAll(), HttpStatus.OK)
     }

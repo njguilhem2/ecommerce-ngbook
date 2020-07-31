@@ -7,7 +7,7 @@ spring:
 server:
   port: 8080
   servlet:
-    context-path: /ecommerce
+    context-path: /
 
 # Management endpoints actuator
 management:
@@ -26,3 +26,8 @@ management:
       jdbc.connections.active: true
       process.cpu.usage: true
       all: false
+
+# Gerenciador de Secrets
+book:
+  jwt:
+    secret : asjndflkjaslkdjasslkd
